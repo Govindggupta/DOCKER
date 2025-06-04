@@ -1,0 +1,15 @@
+ docker container exec -it 365c6b7f0fb5 bash : by this command you can connect the container with bash and run 
+
+ docker pull ubunut:12.04 : by this you can pull the image and of anny version written after ":"
+
+ docker run mongo : byy this command you can run  the container / image in you local and if it's not there it will be pulled from the docker hub and then will be runned 
+
+ docker ps : check the running containers
+
+ docker inspect <container_id> : check the details of the container
+
+ docker stop <container_id> : stop the container
+
+ docker ps aux : check the running containers and the processes running in them
+
+ 
