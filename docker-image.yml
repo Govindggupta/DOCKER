@@ -1,0 +1,14 @@
+# Docker image
+# Build a Docker image to deploy, run, or push to a container registry.
+
+parameters:
+- name: imageRepository # Name of the repo
+  type: string
+- name: dockerFilePath # Path to the Dockerfile
+  type: string
+  default: ./Dockerfile
+- name: buildContext # Path to the folder containing the Dockerfile
+  type: string
+  default: .
+- name: imageName # Name of the image
+  type: string
