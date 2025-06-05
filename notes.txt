@@ -12,4 +12,30 @@
 
  docker ps aux : check the running containers and the processes running in them
 
+ docker run -d hello-world : run the container in the background / in detach mode 
+
+ docker run <container> echo hey : run the container and echo the message
+
+ docker logs <container_id> : check the logs of the container
  
+ docker logs --since 5s <container_id> : check the logs of the container since 5 seconds ( can give first 5 digit of id)
+
+docker rm <container_id>/name : remove the container
+docker rmi <image_id> : remove the image
+docker rmi $(docker images -q) -f : remove all images at once
+
+docker container prune : remove all the stopped containers
+docker image prune : remove all the images
+
+docker run -d -p 8080:80 nginx  : run on a particular port ( -p )
+
+docker commit -m "added names.txt" e75c1e01a9a6 names_ubuntu:1.01: create a new image from the container
+
+
+docker exec -it e75c1e01a9a6 bash : to run the container stopped 
+
+docker start <container_id> : start the container
+docker exec it <container_id> bash : to run the container in the interactive mode
+!!imp : exec can only run after starting the container
+
+-t : writing a tag for the image
